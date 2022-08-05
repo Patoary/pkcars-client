@@ -10,6 +10,7 @@ import Blogs from './pages/Blogs/Blogs';
 import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
 import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
+import EachInventory from './pages/EachInventory/EachInventory';
 
 function App() {
   return (
@@ -18,21 +19,28 @@ function App() {
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/home' element={<Home></Home>}></Route>
+      <Route path='/inventory/:id' 
+      element={
+        <RequireAuth>
+          <EachInventory/>
+        </RequireAuth>
+      }
+      ></Route>
       <Route path='/manageInventory' element={
       <RequireAuth>
-      <ManageInventory></ManageInventory>
+      <ManageInventory/>
       </RequireAuth>
       }></Route>
       <Route path='/addInventory' element={
         <RequireAuth>
-      <AddInventory></AddInventory>
+      <AddInventory/>
       </RequireAuth>
       }></Route>
-      <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-      <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
-     <Route path='/login' element= {<Login></Login>}></Route>
-     <Route path='/register' element={<Register></Register>}></Route>
-      <Route path='*' element={<NotFound></NotFound>}></Route>
+      <Route path='/blogs' element={<Blogs/>}></Route>
+      <Route path='/aboutus' element={<AboutUs/>}></Route>
+     <Route path='/login' element= {<Login/>}></Route>
+     <Route path='/register' element={<Register/>}></Route>
+      <Route path='*' element={<NotFound/>}></Route>
     </Routes>
 
     </div>
