@@ -5,66 +5,72 @@ import { Link, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
 const EachInventory = () => {
-    const [eachInventory, setEachInventory] = useState({});
-    const [newQuantity, setNewQuantity] = useState(0);
-    const {id} = useParams();
-    useEffect(()=>{
-        const url = `http://localhost:4000/inventory/${id}`;
-        fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            setEachInventory(data);
-            setNewQuantity(data.quantity);
+  const [eachInventory, setEachInventory] = useState({});
+  const [newQuantity, setNewQuantity] = useState(0);
+  const { id } = useParams();
+  useEffect(() => {
+    const url = `http://localhost:4000/inventory/${id}`;
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        setEachInventory(data);
+        setNewQuantity(data.quantity);
 
-        })
-    },[id]);
- // handleUpdateStock
- const handleUpdateStock = (event) =>{
+      })
+  }, [id]);
+  // handleUpdateStock
+  const handleUpdateStock = (event) => {
     event.preventDefault();
     const stock = event.target.stock.value;
-    const updateQuantity = newQuantity + parseInt(stock);
-    setNewQuantity(updateQuantity);
-    const url = `http://localhost:4000/update/${id}`;
-    fetch(url, {
+    if(stock<0){
+      toast('Please give a positive number');
+    }
+    if (stock > 0) {
+      const updateQuantity = newQuantity + parseInt(stock);
+      setNewQuantity(updateQuantity);
+      const url = `http://localhost:4000/update/${id}`;
+      fetch(url, {
         method: "PATCH",
-        headers:{
-            "Content-Type": "application/json",
+        headers: {
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({updateQuantity}),
-    })
-    .then(res => res.json())
-    .then(data =>{
-        event.target.reset();
-        toast(`${stock} items added in stock`);
-    })
- }
-
-
-    // handleDelivered 
-    const handleDelivered = () =>{
-        if(newQuantity>0){
-            const updateQuantity = newQuantity - 1;
-            setNewQuantity(updateQuantity);
-            const url = `http://localhost:4000/update/${id}`;
-            fetch(url, {
-                method:"PATCH",
-                headers:{
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({updateQuantity}),
-            })
-            .then(res => res.json())
-            .then(data => {
-                toast('One Item Sold!')
-            });
-        };
+        body: JSON.stringify({ updateQuantity }),
+      })
+        .then(res => res.json())
+        .then(data => {
+          event.target.reset();
+          toast(`${stock} items added in stock`);
+        })
     }
 
-    return (
-        <div>
+  }
 
 
-<div className="lg:flex justify-center items-center mt-10 mb-40 px-4">
+  // handleDelivered 
+  const handleDelivered = () => {
+    if (newQuantity > 0) {
+      const updateQuantity = newQuantity - 1;
+      setNewQuantity(updateQuantity);
+      const url = `http://localhost:4000/update/${id}`;
+      fetch(url, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ updateQuantity }),
+      })
+        .then(res => res.json())
+        .then(data => {
+          toast('One Item Sold!')
+        });
+    };
+  }
+
+  return (
+    <div>
+
+
+      <div className="lg:flex justify-center items-center mt-10 mb-40 px-4">
         <div className="bg-white lg:flex justify-center items-center py-6 shadow-lg rounded-2xl">
           <div className="w-4/5 mx-auto">
             <img className='w-full' src={eachInventory?.img} alt="" />
@@ -84,7 +90,7 @@ const EachInventory = () => {
                 Price : ${eachInventory?.price}
               </p>
               <span className="text-2xl">
-            Available:{' '} 
+                Available:{' '}
                 <span className="font-bold">
                   {newQuantity === 0 ? "Sold Out" : newQuantity}
                 </span>
@@ -103,7 +109,7 @@ const EachInventory = () => {
                 </span>
               </span>
             </div>
-            <form onSubmit={handleUpdateStock}  className="flex items-center">
+            <form onSubmit={handleUpdateStock} className="flex items-center">
               <div className="relative my-4">
                 <input
                   type="number"
@@ -120,7 +126,7 @@ const EachInventory = () => {
                 </label>
               </div>
               <button
-              
+
                 type="submit"
                 className="py-3 px-4 bg-cyan-900 font-semibold uppercase text-white"
               >
@@ -144,9 +150,9 @@ const EachInventory = () => {
           </div>
         </div>
       </div>
-      <ToastContainer/>
-        </div>
-    );
+      <ToastContainer />
+    </div>
+  );
 };
 
 export default EachInventory;
