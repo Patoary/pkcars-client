@@ -8,7 +8,8 @@ import ManageInventory from './pages/ManageInventory/ManageInventory';
 import AddInventory from './pages/AddInventory/AddInventory';
 import Blogs from './pages/Blogs/Blogs';
 import Login from './pages/Login/Login/Login';
-import Ragister from './pages/Login/Ragister/Ragister';
+import Register from './pages/Login/Register/Register';
+import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -16,12 +17,21 @@ function App() {
       <Header></Header>
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
-      <Route path='/manageInventory' element={<ManageInventory></ManageInventory>}></Route>
-      <Route path='/addInventory' element={<AddInventory></AddInventory>}></Route>
+      <Route path='/home' element={<Home></Home>}></Route>
+      <Route path='/manageInventory' element={
+      <RequireAuth>
+      <ManageInventory></ManageInventory>
+      </RequireAuth>
+      }></Route>
+      <Route path='/addInventory' element={
+        <RequireAuth>
+      <AddInventory></AddInventory>
+      </RequireAuth>
+      }></Route>
       <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
      <Route path='/login' element= {<Login></Login>}></Route>
-     <Route path='/register' element={<Ragister></Ragister>}></Route>
+     <Route path='/register' element={<Register></Register>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
 

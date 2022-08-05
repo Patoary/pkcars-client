@@ -1,0 +1,35 @@
+.form{
+    
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 15px;
+    border-radius: 15px;
+    /* background-color: rgba(58, 58, 58, 0.6); */
+    background-color:#0119196e;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.submit-btn{
+    background: #116466;
+    border: 0;
+    color: white;
+}
+.submit-btn:hover{
+    background: #053c3c;
+}
+
+.form h3{
+    margin-top: 20px;
+    text-align: center;
+    color: #116466;
+}
+@media screen and (max-width:780px) {
+    .form{
+        width: 50%;
+    }
+}
+@media screen and (max-width:640px) {
+    .form{
+        width: 80%;
+    }
+}

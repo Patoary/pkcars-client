@@ -1,11 +1,16 @@
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Outlet } from 'react-router-dom';
 import CustomLink from '../../../CustomLink/CustomLink';
+import auth from '../../../firebase.init';
 import './Header.css';
 const Header = () => {
+    const [user] = useAuthState(auth);
     const [isMobile, setIsMobile] = useState(false);
+
     return (
         <>
            <nav className='navbar sticky-top'>
@@ -18,7 +23,13 @@ const Header = () => {
                    <CustomLink to='/addInventory' className='addInventory'>Add Inventory</CustomLink>
                    <CustomLink to='/blogs' className='blogs'>Blogs</CustomLink>
                    <CustomLink to='/aboutus' className='aboutus'>About</CustomLink>
-                   <CustomLink to='/login' className='login'>Login</CustomLink>
+                {
+                    user? <CustomLink to='/login' className='logout' onClick={()=> signOut(auth)}>Logout</CustomLink>
+                    :
+                    <CustomLink to='/login' className='login'>Login</CustomLink>
+                    
+
+                }
                </ul>
                <button className='mobile-menu-icon'
                     onClick={() => setIsMobile(!isMobile)}

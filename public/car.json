@@ -1,0 +1,69 @@
+[
+    {
+        "name": "TOYOTA PRIUS 2021",
+        "price": "22000$",
+        "description": "Integrated backup camera display * Smart Key System * with Push Button Start Apple CarPlay® * & Amazon Alexa * compatible 60/40 split fold-down rear seats with center armrest LED Daytime Running Lights (DRL) with on/off feature Smart-flow climate control system with pollen filtration Hill Start Assist Control (HAC) * Bi-LED projector low- and high-beam headlights with auto-off feature LED taillights and stop lights Toyota Safety Sense™ 2.0 (TSS 2.0) * standard",
+        "img": "https://i.ibb.co/J7KKBrP/2021-Prius-2020-Edition.jpg",
+        "quantity":"50",
+        "supplier":"Toyora Motors"
+    },
+    {
+        "name": "HYBRID CAMRY 2023",
+        "price": "26000$",
+        "description": "Dual zone automatic climate controlnSmart Key System with Push Button Start4-mode switch (EV, * Eco, Normal, Sport) Audio — 7-in. touchscreen with six speakers Integrated backup camera * with projected pathToyota Safety Sense™ 2.5+ (TSS 2.5+) *Auto on/off headlightsAndroid Auto™ * & Apple CarPlay® * & Amazon Alexa * compatibility",
+        "img": "https://i.ibb.co/xsTMJ29/2023-Camry-LE-and-LE-Hybrid.jpg",
+        "quantity":"30",
+        "supplier":"Toyora Motors"
+    },
+    {
+        "name": "SUPRA 2021",
+        "price": "60000$",
+        "description": " The 2021 Toyota Supra new four-cylinder makes the sporty coupe more accessible, but the six-cylinder’s attitude and raucousness is the best way to get the Supra experience.It’s the Supra’s wild design and nostalgia that make it unique versus any objective performance numbers.Only one year after being reintroduced to the world, the 2021 Toyota Supra has a lot of new stuff going on, including a new entry-level turbocharged four-cylinder version and a beefed-up, more powerful turbo six. Named the GR Supra 2.0, the 2.0-liter four-cylinder’s 255 horsepower looks pretty weak on paper. Just 255 hp? In a Supra? After all, a Toyota Camry family sedan’s V-6 has 301 hp, and the GR Supra 3.0 with a six-cylinder now has 382 hp. However, this is a classic case of how specs can be misleading.  ",
+        "img": "https://i.ibb.co/Jxr9S1D/supra-2021.jpg",
+        "quantity":"10",
+        "supplier":"Toyora Motors"
+    },
+    {
+        "name": "SUPRA 2022",
+        "price": "70000$",
+        "description": "2.0L twin-scroll single-turbo inline 4-cylinder engine18-in. cast-aluminum 10-spoke wheels with dual-tone finishComplimentary 1-year NASA membership, * including one High-Performance Driving Experience (HPDE) *8.8-in. display screen with Supra Command *Black Alcantara® */leather-trimmed sport seatsDual rear exhaust outlets with polished stainless steel exhaust tipsAerodynamic underbody panel8.8-in. full-digital TFT LCD gauge cluster, including tachometer, speedometer and MIDCarbon-fiber interior trim",
+        "img": "https://i.ibb.co/tL28qZS/supra-2022.jpg",
+        "quantity":"10",
+        "supplier":"Toyora Motors"
+    },
+    {
+        "name": "TOYOTA ALPHARD",
+        "price": "40000$",
+        "description": "The facelifted third generation Alphard and second generation Vellfire were unveiled on 25 December 2017 and released on 8 January 2018. Most of the changes are only to the exterior and powertrain, whereas interior equipment remains largely similar with minor changes. New rectangular taillights replace the horizontal ones on the Vellfire, mimicking the design of the second generation's taillights. The Alphard gets slimmer LED headlights and a larger grille up front. Both models get sequential LED turn signals as standard. Also new is an updated V6 engine, the 2GR-FKS that replaces the outgoing 2GR-FE (except for Hong Kong, due to the emission rules).[citation needed] Output has increased to 300 PS (221 kW; 296 hp) and 362 N⋅m (267 lbf⋅ft). Also new is a Direct-Shift 8-speed automatic, that replaces the 6-speed Super ECT that is only found in V6-powered variants. Accelerating from 0–100 km/h (0–62 mph) can be achieved in 7.5 seconds. The debut of the second generation Toyota Safety Sense system is launched with the facelifted Alphard and Vellfire, which became standard equipment across all variants.",
+        "img": "https://i.ibb.co/M9CKBvQ/Toyota-Alpha.jpg",
+        "quantity":"17",
+        "supplier":"Toyora Motors"
+    },
+    {
+        "name": "COROLLA CROSS SUV",
+        "price": "25000$",
+        "description": "Toyota has made the Corolla of SUVs with the 2023 Corolla Cross, which is both a blessing and a curse. The Cross features the nameplate’s signature affordability with an extra dose of practicality. Unfortunately, it also inherits the compact car’s forgettable driving character and meh performance. Its styling, though hardly memorable, at least skews toward the cute end of the spectrum, and the sportier trims add a little visual zest to the Corolla Cross’s curb appeal. The base engine is an anemic 169-hp 2.0-liter four-cylinder but an optional hybrid system adds three electric motors to boost combined output to 194 ponies.",
+        "img": "https://i.ibb.co/1Qpn4g3/Toyota-Corolla-cross-suv.jpg", 
+        "quantity":"22",
+        "supplier":"Toyora Motors"
+    },
+    {
+        "name": "TOYOTA CH-R",
+        "price": "28000$",
+        "description": "In Japan, the C-HR is sold at all Toyota dealership sales channels (Toyota Store, Toyopet Store, Toyota Corolla Store and Netz Store). The Japanese market C-HR is powered by either 1.2-litre turbocharged petrol engine, or 1.8-litre Hybrid. The FWD models are available with both engines, while the only motor for the AWD models is 1.2-litre turbo. Model grades are S, S-LED, G, S-T and G-T. Models S, S-LED, G are powered with a 1.2-litre turbo engine, while other models by a 1.8-litre Hybrid. LED Package is exclusive for the G and S-LED packages.",
+        "img": " https://i.ibb.co/2MZxwgR/toyota-c-hr.jpg ",
+        "quantity":"15",
+        "supplier":"Toyora Motors"
+       
+       
+    },
+    {
+        "name": "TOYOTA CAMRY",
+        "price": "18000$",
+        "description": "In the world of midsized sedans, the Camry ranks among the best, thanks to its comfortable ride, quiet cabin, good fuel economy, and easy-to-use controls. Handling is slightly improved over previous versions, but the lower stance makes access a little more difficult, and the rear seat is not as roomy as in some competitors. The standard 2.5-liter four-cylinder engine provides good power and gets an impressive 32 mpg overall. It can also be paired with an optional all-wheel-drive system. A 3.5-liter V6 is available in front-wheel drive. Both are coupled to an eight-speed automatic transmission that suffers from some rough shifts. The frugal hybrid version gets 47 mpg overall. Android Auto and Apple CarPlay compatibility is standard. FCW and AEB with pedestrian detection come standard, but BSW and RCTW are optional.",
+        "img": "https://i.ibb.co/bWhqKGM/toyota-camry.jpg",
+        "quantity":"20",
+        "supplier":"Toyora Motors"
+    }
+    
+]

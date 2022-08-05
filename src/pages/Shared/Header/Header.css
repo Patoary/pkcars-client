@@ -42,7 +42,7 @@
 .blogs,
 .aboutus,
 .login,
-.signout {
+.logout {
     display: flex;
     text-decoration: none;
     font-size: 20px;
@@ -67,7 +67,7 @@
     .blogs,
     .aboutus,
     .login,
-    .signout {
+    .logout {
         text-align: center;
         display: block;
         padding: 32px;
