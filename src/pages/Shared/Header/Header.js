@@ -19,8 +19,14 @@ const Header = () => {
                onClick={()=> setIsMobile(false)}               
                >
                    <CustomLink to='/' className='home'>Home</CustomLink>
-                   <CustomLink to='/manageInventory' className='manageInventory'>Manage Inventory</CustomLink>
-                   <CustomLink to='/addInventory' className='addInventory'>Add Inventory</CustomLink>
+                   {
+                       user ? <CustomLink to='/manageInventory' className='manageInventory'>Manage Inventory</CustomLink> : ''
+                   }
+                   {
+                       user ? <CustomLink to='/addInventory' className='addInventory'>Add Inventory</CustomLink> : ''
+                   }
+                   
+                   
                    <CustomLink to='/blogs' className='blogs'>Blogs</CustomLink>
                    <CustomLink to='/aboutus' className='aboutus'>About</CustomLink>
                 {

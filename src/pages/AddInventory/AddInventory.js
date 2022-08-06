@@ -74,7 +74,7 @@ const AddInventory = () => {
           <label>Photo URL</label>
           <input
             className="border py-2 px-5 mb-4 rounded-lg"
-            {...register("image", { required: true })}
+            {...register("img", { required: true })}
           />
 
           <div className="flex justify-center">
