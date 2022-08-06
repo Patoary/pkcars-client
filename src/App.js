@@ -11,6 +11,7 @@ import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
 import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
 import EachInventory from './pages/EachInventory/EachInventory';
+import Footer from './pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
      <Route path='/register' element={<Register/>}></Route>
       <Route path='*' element={<NotFound/>}></Route>
     </Routes>
-
+      <Footer/>
     </div>
   );
 }
