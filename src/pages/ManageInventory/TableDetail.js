@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const TableDetail = ({ product }) => {
-    const { name, price, img, supplier, quantity, _id } = product;
-    console.log(name, price)
+    const { name, price, img, supplier, quantity} = product;
     return (
         <>
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50"
