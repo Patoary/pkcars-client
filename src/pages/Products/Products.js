@@ -8,13 +8,15 @@ const Products = () => {
     return (
         <div>
             <div>
-                <h3>Our Porducts</h3>
+                <div className='m-4  font-bold fs-3'>
+                    <span>Our</span>
+                    <span className='text-cyan-800'>Porducts</span></div>
             </div>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 px-5 lg:px-10'>
                 {
                     limitedProducts.map(product => <ProductCard
                         key={product._id}
-                        product = {product}
+                        product={product}
                     ></ProductCard>)
                 }
             </div>

@@ -8,7 +8,7 @@ const Footer = () => {
 <footer className=" bg-dark mt-32">
     <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
         <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-300 uppercase dark:text-cyan-800">Company</h2>
+            <h2 className="mb-6 text-sm font-bold text-gray-300 uppercase dark:text-cyan-800">PKCARS</h2>
             <ul className="text-gray-300 dark:text-cyan-800">
                 <li className="mb-4">
                     <Link to='/aboutus' className=" hover:text-gray-100">About</Link>
