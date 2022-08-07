@@ -23,6 +23,7 @@ const CompanyLogo = () => {
             <Zoom bottom cascade>
                 <div className="companies">
                     <Swiper
+                    
                         slidesPerView={4}
                         spaceBetween={20}
                         loop={true}

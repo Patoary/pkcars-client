@@ -5,6 +5,7 @@ import { Zoom } from 'react-reveal';
 import { toast } from 'react-toastify';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import PageTitle from '../PageTitle/PageTitle';
 const AddInventory = () => {
     const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
@@ -20,6 +21,7 @@ const AddInventory = () => {
     return (
 <Zoom left>
       <div className="px-4">
+        <PageTitle title='AddInventory'></PageTitle>
         <form
           className="flex flex-col mx-auto justify-center lg:w-1/2 w-full lg:p-24 p-5 my-8 rounded-2xl shadow-lg"
           onSubmit={handleSubmit(onSubmit)}

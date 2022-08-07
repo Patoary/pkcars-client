@@ -9,6 +9,7 @@ import auth from '../../../firebase.init';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import toyota from '../../../images/toyota-crown.png'
+import PageTitle from '../../PageTitle/PageTitle';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -50,6 +51,7 @@ const Login = () => {
 
     return (
         <div className=''>
+            <PageTitle title='Login'></PageTitle>
             <div className='form sm:w-10/12  md:w-3/4 lg:w-1/2 '>
                 <h3 className='fs-3 mb-3'>Login</h3>
                 <Form onSubmit={handleSignin}>

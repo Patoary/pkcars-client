@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import TableDetail from './TableDetail';
 import './ManageInventory.css';
+import PageTitle from '../PageTitle/PageTitle';
 const ManageInventory = () => {
     const [products, setProducts] = useState([]);
     const [pageNumber, setPageNumber] = useState(0);
@@ -42,6 +43,7 @@ const ManageInventory = () => {
 
     return (
         <div>
+            <PageTitle title='ManageInventory'></PageTitle>
             <h1 className='p-3 m-2 fs-4 font-semibold'>All Inventory</h1>
 
             <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
