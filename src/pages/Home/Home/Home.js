@@ -1,4 +1,5 @@
 import React from 'react';
+import Benefits from '../../Benefits/Benefits';
 import CompanyLogo from '../../CompanyLogo/CompanyLogo';
 import PageTitle from '../../PageTitle/PageTitle';
 import Products from '../../Products/Products';
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <Products></Products>
             <CompanyLogo></CompanyLogo>
+            <Benefits></Benefits>
         </div>
     );
 };

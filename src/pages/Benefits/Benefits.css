@@ -1,0 +1,21 @@
+.strength-option {
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+  .strength-icon  i{
+    margin-bottom: 13px;
+    box-shadow: 0 10px 55px 5px rgb(108 187 250 / 30%);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 20%;
+    color: #116466;
+    font-size: 1.143rem;
+    transition: 0.5s;
+  }
+  .strength-option:hover .strength-icon{
+    border-radius: 20% 10% 30% 70%/10% 10% 10% 10%;
+    background-color: #116466;
+    color: white;
+  }
