@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Login.css';
 import { Button, Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
@@ -10,6 +10,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import toyota from '../../../images/toyota-crown.png'
 import PageTitle from '../../PageTitle/PageTitle';
+import useToken from '../../../hooks/useToken';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -23,6 +24,7 @@ const Login = () => {
         signInError,
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, resetError] = useSendPasswordResetEmail(auth);
+    const [token] = useToken(user);
     const navigateRegister = event => {
         navigate('/register')
     }
@@ -42,11 +44,11 @@ const Login = () => {
         }
 
     }
-    const handleSignin = (event) => {
+    const  handleSignin = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
     }
 
     return (

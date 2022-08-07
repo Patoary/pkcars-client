@@ -26,6 +26,10 @@ const Header = () => {
                        user ? <CustomLink to='/addInventory' className='addInventory'>Add Inventory</CustomLink> : ''
                    }
                    
+                   {
+                       user ? <CustomLink to='/myItem' className='myItem'>My Item</CustomLink> : ' '
+                   }
+                   
                    
                    <CustomLink to='/blogs' className='blogs'>Blogs</CustomLink>
                    <CustomLink to='/aboutus' className='aboutus'>About</CustomLink>
