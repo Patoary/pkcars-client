@@ -12,7 +12,7 @@ const Benefits = () => {
     return (
         <div className="bg-white w-full block lg:flex justify-center items-center py-14 mb-10">
             <Zoom>
-                <div className="lg:w-[60ch] px-4">
+                <div className="lg:w-[80ch] px-4">
                     <Slide right>
                         <h2 className="font-[Nunito] text-4xl font-extrabold my-5 text-blue-900">
                             Customer <span className="text-cyan-800">Benefits</span>
@@ -24,7 +24,7 @@ const Benefits = () => {
                         </p>
                     </Slide>
 
-                    <Flip left cascade>
+                    <Flip right>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                             <div className="strength-option shadow hover:shadow-lg transition-all duration-300 py-4 mx-2">
                                 <p className="strength-icon">
