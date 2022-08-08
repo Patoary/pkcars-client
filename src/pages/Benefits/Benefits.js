@@ -24,7 +24,7 @@ const Benefits = () => {
                         </p>
                     </Slide>
 
-                    <Flip>
+                    <Flip right>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                             <div className="strength-option shadow hover:shadow-lg transition-all duration-300 py-4 mx-2">
                                 <p className="strength-icon">
