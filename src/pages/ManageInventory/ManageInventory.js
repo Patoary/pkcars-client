@@ -9,12 +9,12 @@ const ManageInventory = () => {
     const [pages, setPages] = useState(0);
     const [limit, setLimit] = useState(5);
     useEffect(() => {
-        fetch(`http://localhost:4000/products?limit=${limit}&pageNumber=${pageNumber}`)
+        fetch(`https://rocky-tundra-84023.herokuapp.com/products?limit=${limit}&pageNumber=${pageNumber}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [limit, pageNumber]);
     useEffect(() => {
-        fetch(`http://localhost:4000/productCount`)
+        fetch(`https://rocky-tundra-84023.herokuapp.com/productCount`)
             .then(res => res.json())
             .then(data => {
                 const count = data.count;
@@ -26,7 +26,7 @@ const ManageInventory = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure want to delete this item ?')
         if(proceed){
-              const url = `http://localhost:4000/inventory/${id}`;
+              const url = `https://rocky-tundra-84023.herokuapp.com/inventory/${id}`;
         fetch(url, {
             method:'DELETE',
         })

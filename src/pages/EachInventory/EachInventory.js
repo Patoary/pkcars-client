@@ -9,7 +9,7 @@ const EachInventory = () => {
   const [newQuantity, setNewQuantity] = useState(0);
   const { id } = useParams();
   useEffect(() => {
-    const url = `http://localhost:4000/inventory/${id}`;
+    const url = `https://rocky-tundra-84023.herokuapp.com/inventory/${id}`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -28,7 +28,7 @@ const EachInventory = () => {
     if (stock > 0) {
       const updateQuantity = newQuantity + parseInt(stock);
       setNewQuantity(updateQuantity);
-      const url = `http://localhost:4000/update/${id}`;
+      const url = `https://rocky-tundra-84023.herokuapp.com/update/${id}`;
       fetch(url, {
         method: "PATCH",
         headers: {
@@ -51,7 +51,7 @@ const EachInventory = () => {
     if (newQuantity > 0) {
       const updateQuantity = newQuantity - 1;
       setNewQuantity(updateQuantity);
-      const url = `http://localhost:4000/update/${id}`;
+      const url = `https://rocky-tundra-84023.herokuapp.com/update/${id}`;
       fetch(url, {
         method: "PATCH",
         headers: {

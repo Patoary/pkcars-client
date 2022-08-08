@@ -10,7 +10,7 @@ const AddInventory = () => {
     const { register, handleSubmit, reset } = useForm();
     const [user] = useAuthState(auth);
     const onSubmit= (data) =>{
-    axios.post('http://localhost:4000/addInventory',data)
+    axios.post('https://rocky-tundra-84023.herokuapp.com/addInventory',data)
     .then(res => {
         if(res){
             toast('Inventory Product Added');
