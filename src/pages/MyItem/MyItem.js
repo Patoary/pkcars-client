@@ -27,14 +27,14 @@ const MyItem = () => {
             }
             catch (error){
                 console.log(error);
+                // if (error.response.status === 401 || 403) {
+                //     signOut(auth);
+                //     navigate('/login')
+                // }
             }
-            // catch (error) {
-            //     console.log(error);
-            //     if (error.response.status === 401 || 403) {
-            //         signOut(auth);
-            //         navigate('/login')
-            //     }
-            // }
+
+              
+            
 
         }
         getMyItem();
