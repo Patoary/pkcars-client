@@ -14,7 +14,7 @@ const SocialLogin = () => {
     if (googleError) {
         errorElement = <p className='text-danger'>Error: {googleError?.message}</p>
     }
-    if (googleUser) {
+    if (token) {
         navigate('/home')
         // navigate(from, { replace: true })
     }

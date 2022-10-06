@@ -28,7 +28,7 @@ const Login = () => {
     const navigateRegister = event => {
         navigate('/register')
     }
-    if (user) {
+    if (token) {
         navigate('/home');
     }
     if (signInError || resetError) {
