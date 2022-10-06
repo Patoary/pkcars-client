@@ -3,12 +3,15 @@
 
 ![Web Site Name : PKCARS](https://i.ibb.co/1zT9PSf/pkcars.png)
 
-I made this project  for a car dealer to  manage their Inventory. I think this web site help them to make their works easy.
+## OVERVIEW :
+#### • User can maintain their products in all aspects.
+#### • User can store their product information in the database.
+#### • User Can update stocks and also can add product , and can remove products
 
 ## 概要 :
-#### ★ ユーザーはあらゆる面で製品を維持できます
-#### ★ ユーザーは製品情報をデータベースに保存できます
-#### ★ ユーザーは在庫を更新したり、製品を追加したり、製品を削除したりできます
+#### • ユーザーはあらゆる面で製品を維持できます
+#### • ユーザーは製品情報をデータベースに保存できます
+#### • ユーザーは在庫を更新したり、製品を追加したり、製品を削除したりできます
 
 ## Uses Technology(使用された技術) 
 #### ★HTML
